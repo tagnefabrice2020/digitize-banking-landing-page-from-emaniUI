@@ -227,6 +227,7 @@ svg {
     background-color: #fff;
     bottom: -38px;
     z-index: 999;
+    
 }
 
 .left--lane::after {
@@ -234,45 +235,26 @@ svg {
     position: absolute;
     width: 2rem;
     height: 2rem;
-    background-color: #fff;
+    background-color: transparent;
     top: -2rem;
     z-index: 999;
+    border-bottom-left-radius: 100px;
+        box-shadow: -10px 10px 0px 10px rgb(255, 255, 255);
 }
 
-.left--lane::before {
-    position: absolute;
-    content: '';
-    width: 4rem;
-    height: 4rem;
-    background-color: #000;
-    top: -4rem;
-    border-radius: 50%;
-    z-index: 99999;
-}
 
 .right--lane::after {
     content: '';
     position: absolute;
     width: 2rem;
     height: 2rem;
-    background-color: #fff;
+    background-color: transparent;
     top: -2rem;
     right: 0;
     z-index: 999;
+    border-bottom-right-radius: 100px;
+        box-shadow: 10px 10px 0px 10px rgb(255, 255, 255);
 
-}
-
-.right--lane::before {
-    position: absolute;
-    content: '';
-    width: 4rem;
-    height: 4rem;
-    background-color: #000;
-    top: -4rem;
-    right: 0;
-    border-radius: 50%;
-    z-index: 1;
-    z-index: 99999;
 }
 
 
@@ -299,6 +281,7 @@ svg {
     right: 0;
     font-family: 'Clash Display', sans-serif;
     font-weight: 700;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .font-clash-display {
@@ -504,11 +487,11 @@ svg {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     width: 95%;
     margin: 8rem auto;
-    gap: 3rem;
+    row-gap: 1rem;
 }
 
 .get--to-know__about__univers>div>h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     width: 90%;
     font-family: 'Clash Display',
         sans-serif;
@@ -679,7 +662,7 @@ svg {
 }
 
 .discoveries {
-    padding: 2rem 4rem;
+    padding: 2rem;
     background-color: #000;
     margin-top: 4rem;
 }
@@ -697,7 +680,7 @@ svg {
 
 .discoveries .title__container span {
     color: #818C96;
-    font-size: clamp(1.5rem, 2.5rem, 3.5rem);
+    font-size: min(30px, 60px);
     color: #fff;
     font-weight: 700;
     max-width: 70%;
@@ -794,7 +777,7 @@ svg {
     margin-top: 2rem;
     max-width: 60rem;
     margin: auto;
-   
+
 }
 
 .set--and--change--team__container div {
@@ -814,7 +797,7 @@ svg {
 .set--and--change--team__container div span {
     color: #818C96;
     font-family: 'Clash Display',
-            sans-serif;
-            display: block;
-            margin-top: 1rem;
+        sans-serif;
+    display: block;
+    margin-top: 1rem;
 }

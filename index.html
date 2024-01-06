@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/css/css.css" rel="stylesheet" />
+    <link href="/dist/css/spendings.css" rel="stylesheet" />
+    <link href="/dist/css/contact-us.css" rel="stylesheet" />
+    <link href="/dist/css/footer.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,600&display=swap" rel="stylesheet">
@@ -245,14 +248,81 @@
             </div>
         </div>
 
-        <div>
-            <h3>Control all your spend with smart rules</h3>
+        <div class="spending__section">
+            <h3 class="spending__section__title">Control all your spend with smart rules</h3>
+
+            <div class="spendings__container">
+                <div class="spending">
+                    <div class="spending--logo__container"><img src="/images/money-send.svg" /></div>
+                    <span class="spending">Cosmetics</span>
+                    <span class="spending-date">March 25, 2022</span>
+                    <span class="spending-amount">$100</span>
+                </div>
+
+                <div class="spending">
+                    <div class="spending--logo__container"><img src="/images/money-recive.svg" /></div>
+                    <span class="spending">Food</span>
+                    <span class="spending-date">March 29, 2022</span>
+                    <span class="spending-amount">$45</span>
+                </div>
+
+                <div class="spending">
+                    <div class="spending--logo__container"><img src="/images/money-send.svg" /></div>
+                    <span class="spending">Shopping</span>
+                    <span class="spending-date">March 27, 2022</span>
+                    <span class="spending-amount">-$241</span>
+                </div>
+
+                <div class="spending">
+                    <div class="spending--logo__container"><img src="/images/money-recive.svg" /></div>
+                    <span class="spending">Others</span>
+                    <span class="spending-date">March 25, 2022</span>
+                    <span class="spending-amount">$100</span>
+                </div>
+
+                <div class="spending">
+                    <div class="spending--logo__container"><img src="/images/money-send.svg" /></div>
+                    <span class="spending">Tech</span>
+                    <span class="spending-date">March 29, 2022</span>
+                    <span class="spending-amount">$45</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="newsletter__section"></section>
+    <section class="contact-us">
+        <h4 class="small--title">What are you waiting for?</h4>
+        <h3 class="big--title">Make your business spending smarter</h3>
+        <div class="contact--us--button__container">
+            <button>Try revolut business now</button>
+            <button>Contact sales</button>
+        </div>
+    </section>
 
-    <footer></footer>
+    <footer>
+        <div class="footer--main__block">
+        <h1 class="footer--big__header">Connect your finance
+        with Carty</h1>
+
+        <button>Rejoignez l’univers</button>
+</div>
+        <div class="main__menu">
+            <nav class="left--main__nav">
+                <ul>
+                    <li class="green--button"><a href="#">Business</a></li>
+                    <li><a class="" href="#">Personel</a></li>
+                </ul>
+            </nav>
+            <nav class="right--main__nav">
+                <ul>
+                    <li><a class="" href="#">Features</a></li>
+                    <li><a class="" href="#">Pricing</a></li>
+                    <li><a class="" href="#">Help</a></li>
+                    <li><a class="lang" href="#"><img src="/images/div.svg" />EN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 
     <script>
         setTimeout(() => {

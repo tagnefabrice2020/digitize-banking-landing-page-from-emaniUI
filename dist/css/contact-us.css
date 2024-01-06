@@ -1,0 +1,47 @@
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: min(31rem, 90%);
+    padding: 2rem 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-us .small--title {
+    font-family: 'Clash Display',
+        sans-serif;
+    color: #818C96;
+   
+
+}
+
+.contact-us .big--title {
+    font-family: 'Clash Display',
+        sans-serif;
+    color: #161618;
+    font-size: min(30px, 60px);
+}
+
+.contact--us--button__container {
+    margin: 1.5rem 0;
+}
+
+.contact--us--button__container button {
+    border-radius: 0.45rem;
+    box-sizing: border-box;
+}
+
+.contact--us--button__container button:first-child {
+    background-color: #9FE870;
+    color: #161618;
+    padding: 0.5rem;
+    border: 1px solid #9FE870;
+
+}
+
+.contact--us--button__container button:last-child {
+    border: 1px solid #161618;
+    padding: 0.5rem;
+    background-color: #fff;
+}

@@ -1,0 +1,55 @@
+.spending__section {
+    max-width: 600px;
+    margin: 3rem auto;
+}
+
+.spending__section__title {
+    text-align: center;
+    color: #fff;
+    font-size: clamp(20px, 4vw, 40px);
+    font-family: 'Clash Display', sans-serif;
+}
+
+.spendings__container {
+    max-width: 400px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.spendings__container span {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+}
+
+.spending-amount {
+    font-weight: 700;
+}
+
+.spending--logo__container {
+    display: flex;
+    align-items: center;
+}
+
+.spending {
+    background-color: #fff;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.25rem;
+    opacity: 0.9;
+    transition-property: transform, opacity, padding;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+.spending:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    padding: 0.75rem;;
+}
+
+.spending-amount {
+    margin-left: auto;
+}
