@@ -12,9 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,600&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Inter+Tight:wght@100;500&family=Montserrat:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Montserrat:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"> -->
     <title>Document</title>
 
 </head>
@@ -71,7 +71,7 @@
                 a 37,37 0 1,1 74,0
                 a 37,37 0 1,1 -74,0" />
                 </defs>
-                <text font-size="1.2rem">
+                <text font-size="1.04rem">
                     <textPath xlink:href="#circle">
                         Explore more Explore more -
                     </textPath>
@@ -80,9 +80,9 @@
             <div class="test"></div>
         </div>
         <div class="credit--card__container">
-            <img src="/images/Group(2).png" class="credit--card" />
-            <img src="/images/Group(1).png" class="credit--card" />
-            <img src="/images/Group.png" class="credit--card" />
+            <img src="/images/Group(2).png" class="blue--card credit--card" />
+            <img src="/images/Group(1).png" class="red--card credit--card" />
+            <img src="/images/Group.png" class="green-card credit--card" />
         </div>
         <div class="left--lane"></div>
         <div class="right--lane"></div>
@@ -301,11 +301,11 @@
 
     <footer>
         <div class="footer--main__block">
-        <h1 class="footer--big__header">Connect your finance
-        with Carty</h1>
+            <h1 class="footer--big__header">Connect your finance
+                with Carty</h1>
 
-        <button>Rejoignez l’univers</button>
-</div>
+            <button>Rejoignez l’univers</button>
+        </div>
         <div class="main__menu">
             <nav class="left--main__nav">
                 <ul>
@@ -323,11 +323,38 @@
             </nav>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script>
         setTimeout(() => {
             document.querySelector('.credit--card__container').classList.add('animate_cards');
-        }, 2000);
+        }, 1000);
+    </script>
+
+    <script defer>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".hand--and--card--animated__section div .credit--card", {
+            top: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".hand--and--card--animated__section",
+                toggleActions: "restart reverse restart none",
+                // scrub: true
+            }
+        });
+
+         gsap.to(".hand--and--card--animated__section div .hand", {
+                rotate: 0, 
+                duration: 1,
+                scrollTrigger: {
+                    trigger: ".hand--and--card--animated__section div .content h3",
+                    toggleActions: "restart reverse restart none",
+                    // scrub: 2
+                }
+            });
+
     </script>
 </body>
 

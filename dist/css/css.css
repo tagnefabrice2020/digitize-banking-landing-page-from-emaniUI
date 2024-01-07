@@ -153,6 +153,9 @@ svg {
     left: 50%;
     transform: translateX(-50%) translateY(73%);
     top: -50%;
+
+    font-family:'Inter', sans-serif;
+    font-size: 1rem;
 }
 
 .circular--text__container {
@@ -227,7 +230,7 @@ svg {
     background-color: #fff;
     bottom: -38px;
     z-index: 999;
-    
+
 }
 
 .left--lane::after {
@@ -239,7 +242,7 @@ svg {
     top: -2rem;
     z-index: 999;
     border-bottom-left-radius: 100px;
-        box-shadow: -10px 10px 0px 10px rgb(255, 255, 255);
+    box-shadow: -10px 10px 0px 10px rgb(255, 255, 255);
 }
 
 
@@ -253,7 +256,7 @@ svg {
     right: 0;
     z-index: 999;
     border-bottom-right-radius: 100px;
-        box-shadow: 10px 10px 0px 10px rgb(255, 255, 255);
+    box-shadow: 10px 10px 0px 10px rgb(255, 255, 255);
 
 }
 
@@ -297,6 +300,7 @@ svg {
     font-size: 4rem;
     font-weight: 700;
     max-width: 475px;
+    z-index: 99;
 }
 
 .banner--message__container {
@@ -367,32 +371,31 @@ svg {
     position: absolute;
     top: 1rem;
     width: 52rem;
-
     transition-property: top, transform;
-    transition-duration: 900ms;
-    transition-timing-function: ease-in;
+    transition-duration: 600ms;
 }
 
 .credit--card__container .credit--card:nth-child(1) {
     transform: rotate(55deg) translateY(-16rem)translateX(-2rem);
-    top: -31rem;
+    top: -7rem;
     left: -44rem;
-
-
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .credit--card__container .credit--card:nth-child(2) {
     transform: translateY(5rem) (-13deg);
-
     top: -17rem;
     left: -15rem;
-
+    transition-delay: 200ms;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .credit--card__container .credit--card:nth-child(3) {
     transform: rotate(-45deg) translateY(-2rem) translateX(5.5rem) !important;
-    top: -31rem;
+    top: -17rem;
     left: -19rem;
+    transition-delay: 100ms;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .animate_cards .credit--card:nth-child(1) {
@@ -454,6 +457,27 @@ svg {
     border-radius: 1rem;
     position: relative;
     height: 18rem;
+
+
+    transition-property: background-color, transform, color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+.card--infos__container div:nth-child(1) {
+    transform-origin: bottom right;
+}
+
+.card--infos__container div:nth-child(2) {
+    transform-origin: bottom left;
+}
+
+.card--infos__container div:nth-child(3) {
+    transform-origin: top right;
+}
+
+.card--infos__container div:nth-child(4) {
+    transform-origin: top left;
 }
 
 .card--infos__container div span {
@@ -480,6 +504,19 @@ svg {
     font-weight: 500;
     position: absolute;
     bottom: 2rem;
+}
+
+@media only screen and (min-width: 900px) {
+
+    .card--infos__container div:nth-child(1):hover,
+    .card--infos__container div:nth-child(2):hover,
+    .card--infos__container div:nth-child(3):hover,
+    .card--infos__container div:nth-child(4):hover {
+
+        transform: scale(1.13);
+        background-color: #161618;
+        color: #fff;
+    }
 }
 
 .get--to-know__about__univers {
@@ -568,13 +605,17 @@ svg {
     bottom: 0;
     width: 30rem;
     right: 12rem;
+    transform-origin: bottom left;
+    transform: rotate(30deg);
+    transition-duration: 600ms;
+    transition-property: transform;
 }
 
 .hand--and--card--animated__section div .credit--card {
     position: absolute;
     width: 28rem;
     right: 5rem;
-    top: 0;
+    top: -100%;
 }
 
 .hand--and--card--animated__section div .content {
