@@ -13,9 +13,6 @@
     position: relative;
     background-color: #000;
     margin: auto;
-
-    /* border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px; */
     overflow: hidden;
 }
 
@@ -27,7 +24,6 @@
     gap: 1.5rem;
     font-family: 'Inter', sans-serif;
     margin: auto;
-    /* font-family: 'Inter Tight', sans-serif; */
 }
 
 .top__section header .logo__container {
@@ -37,7 +33,35 @@
     justify-content: center;
 }
 
-.top__section header .logo__container .logo {}
+.loader {
+    visibility: visible;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #061b11;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    z-index: 999999;
+}
+
+.hidden.wrapper {
+    visibility: hidden;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 .main__menu {
     flex-grow: 1;
